@@ -32,10 +32,13 @@ float z = 0;
 // these values can change dramatically the output
 // of the differential equations
 //
-float a = 99.96;
-float b = 28;
-float c = 8.0/3.0;
+float a = 28;
+float b = 46.92;
+float c = 4;
 
+//float a = 10;
+//float b = 28;
+//float c = 8/3;
 // 
 ArrayList<PVector> points = new ArrayList<PVector>();
 
@@ -96,7 +99,7 @@ void draw() {
     // the movement of the pixels from the vector
     // a value of 5.0 using the mouse wheel can give the illusion of moving
     // in/out of the cloud
-    offset.mult(1);
+    offset.mult(0);
     v.add(offset);
     hu += 1;
     if (hu > 255) {
