@@ -42,7 +42,8 @@ ArrayList<PVector> points = new ArrayList<PVector>();
 
 
 void setup() {
-  size (1200, 800, P3D);
+  //size 1440, 900 size of macbookpro 15inch display
+  size (1440, 900, P3D);
   //
   colorMode(HSB);
   cam = new PeasyCam(this, 500);
@@ -90,7 +91,9 @@ void draw() {
     //vertex(v.x, v.y, v.z);
     point(v.x, v.y, v.z);
     PVector offset = PVector.random3D();
-    offset.mult(0.1);
+    //original offset multiplier was 0.1.  The larger the multiplier the larger
+    // the movement of the pixels from the vector
+    offset.mult(1.0);
     v.add(offset);
     hu += 1;
     if (hu > 255) {
