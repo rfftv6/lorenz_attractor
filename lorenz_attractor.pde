@@ -42,7 +42,7 @@ ArrayList<PVector> points = new ArrayList<PVector>();
 
 
 void setup() {
-  size (800, 600, P3D);
+  size (1200, 800, P3D);
   //
   colorMode(HSB);
   cam = new PeasyCam(this, 500);
@@ -80,19 +80,19 @@ void draw() {
   scale(1);
 
   //stroke(255);
-  noFill();
+ // noFill();
 
   float hu = 0;
-  
+
   beginShape();
   for (PVector v : points) {
     stroke(hu, 255, 255);
     //vertex(v.x, v.y, v.z);
-        point(v.x, v.y, v.z);
-  //  PVector offset = PVector.random3D();
+    point(v.x, v.y, v.z);
+    //  PVector offset = PVector.random3D();
     //offset.mult(0.1);
-   // v.add(offset);
-    hu += 0.1;
+    // v.add(offset);
+    hu += 1;
     if (hu > 255) {
       hu = 0;
     }
