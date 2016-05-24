@@ -78,7 +78,7 @@ void draw() {
   // translate(width/2, height/2);
 
   // scale() large values gives a very coarse drawing of the fucntion being drawn
-  scale(2);
+  scale(1);
 
   //stroke(255);
  noFill();
