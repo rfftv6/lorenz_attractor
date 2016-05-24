@@ -81,16 +81,15 @@ void draw() {
   scale(2);
 
   //stroke(255);
- // noFill();
+ noFill();
 
   float hu = 0;
 
   beginShape();
   for (PVector v : points) {
     stroke(hu, 255, 255);
-    //vertex(v.x, v.y, v.z);
-    //
-    point(v.x, v.y, v.z);
+    vertex(v.x, v.y, v.z);
+    //point(v.x, v.y, v.z);
     PVector offset = PVector.random3D();
     //original offset multiplier was 0.1.  The larger the multiplier the larger
     // the movement of the pixels from the vector
