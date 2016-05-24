@@ -32,7 +32,7 @@ float z = 0;
 // these values can change dramatically the output
 // of the differential equations
 //
-float a = 10;
+float a = 99.96;
 float b = 28;
 float c = 8.0/3.0;
 
@@ -89,11 +89,14 @@ void draw() {
   for (PVector v : points) {
     stroke(hu, 255, 255);
     //vertex(v.x, v.y, v.z);
+    //
     point(v.x, v.y, v.z);
     PVector offset = PVector.random3D();
     //original offset multiplier was 0.1.  The larger the multiplier the larger
     // the movement of the pixels from the vector
-    offset.mult(1.0);
+    // a value of 5.0 using the mouse wheel can give the illusion of moving
+    // in/out of the cloud
+    offset.mult(1);
     v.add(offset);
     hu += 1;
     if (hu > 255) {
