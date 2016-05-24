@@ -89,9 +89,9 @@ void draw() {
     stroke(hu, 255, 255);
     //vertex(v.x, v.y, v.z);
     point(v.x, v.y, v.z);
-    //  PVector offset = PVector.random3D();
-    //offset.mult(0.1);
-    // v.add(offset);
+    PVector offset = PVector.random3D();
+    offset.mult(0.1);
+    v.add(offset);
     hu += 1;
     if (hu > 255) {
       hu = 0;
