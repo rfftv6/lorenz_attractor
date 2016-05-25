@@ -107,7 +107,8 @@ void draw() {
     }
   }
   endShape();
-
+  //saving each from for a movie
+saveFrame("output/mov_####.png");
   // point(x, y);
   // println(x, y, z);
 }
