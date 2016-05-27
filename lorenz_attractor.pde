@@ -32,13 +32,13 @@ float z = 0.1;
 // these values can change dramatically the output
 // of the differential equations
 //
-//float a = 28;
-//float b = 46.92;
-//float c = 4;
+float a = 16;
+float b = 4;
+float c = 1;
 
-float a = 10;
-float b = 28;
-float c = 8/3;
+//float a = 10;
+//float b = 28;
+//float c = 8/3;
 // 
 ArrayList<PVector> points = new ArrayList<PVector>();
 
