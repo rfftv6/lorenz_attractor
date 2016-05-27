@@ -36,6 +36,9 @@ float a = 28;
 float b = 46.92;
 float c = 4;
 
+
+
+
 //float a = 10;
 //float b = 28;
 //float c = 8/3;
@@ -58,6 +61,9 @@ void setup() {
 
 void draw() {
   background(0);
+  a = a+random(7, 10);
+  b = b+random(25, 28);
+  c = c+random(4, 6);
 
   // setting up the step value of dt
   float dt = 0.01;
@@ -84,7 +90,7 @@ void draw() {
   scale(2);
 
   //stroke(255);
- // noFill();
+  // noFill();
 
   float hu = 0;
 
